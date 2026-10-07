@@ -4,4 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080"
+      - target: 8080
+        host_ip: "127.0.0.1"
+        protocol: tcp
